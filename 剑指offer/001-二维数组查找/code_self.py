@@ -1,4 +1,6 @@
 def find(matrix,obj_number):
+	if matrix == [[]]:
+		return False    #用于排除特殊情况
 	i = 0
 	j = len(matrix[0])-1
 	while j >= 0 and i < len(matrix[0]):
